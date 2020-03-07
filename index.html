@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Patient List</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- font-awesome library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!-- load jQuery and tablesorter scripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="https://mottie.github.io/tablesorter/dist/js/jquery.tablesorter.min.js">
+    </script>
+    <!-- tablesorter widgets (optional) -->
+    <script type="text/javascript" src="https://mottie.github.io/tablesorter/js/jquery.tablesorter.widgets.js"></script>
+
+    <!-- custome stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
+        <a class="navbar-brand ml-3" href="#"> <i class="fa fa-heart" aria-hidden="true"></i> connected<span>life</span> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-5 font-weight-bold sm-text">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Patient List <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav my-lg-0 ">
+                <li class="position-relative">
+                    <div class="redDot"></div>
+                    <a class="nav-link text-light" href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a class="nav-link text-light" href="#">welcome, <span class="font-weight-bold sm-text">Jacobi
+                            Kwan</span></a>
+                </li>
+                <li>
+                    <span class=" text-muted bg-light p-2 avatar sm-text mt-1" href="#">J K</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Page Content -->
+    <article class="container">
+
+        <!-- Start info Section-->
+        <section class="mt-5 info">
+            <section class=" row justify-content-between">
+                <h3 class="col-sm p-0">My Patients</h3>
+                <button type="button" class="btn btn-warning rounded-pill text-white ml-auto col-sm-2">Add a New
+                    Patient</button>
+            </section>
+
+            <section class="row justify-content-between  mt-4">
+                <section class=" col-sm-8 text-muted p-0">
+                    <div class="row sm-text ">
+                    <span class="col-sm-2 mb-2 m">Total Members 36</span>
+                    <span class="col-sm-3 mb-2">Showing <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+                        <div class="d-inline">
+                            10</div>
+                        per
+                        page</span>
+                    <span class="col-sm-2 mb-2">Manage columns <i class="fa fa-sort-desc" aria-hidden="true"></i></span>
+                </div>
+                </section>
+                <input class="col-sm-2 pl-4 form-control mr-xl-2 rounded-pill d-inline " type="search" placeholder="Search"
+                    aria-label="Search" id="search">
+            </section>
+        </section>
+            <!-- End info Section-->
+
+            <!-- Start Patient Info Section -->
+            <section class=" mb-3 mt-1 table-responsive">
+                <table id="myTable" class="table table-hover tablesorter">
+                    <thead>
+                        <tr>
+                            <th><i class="fa fa-sort" aria-hidden="true"></i> name</th>
+                            <th class="pr-5"><i class="fa fa-sort" aria-hidden="true"></i> gender</th>
+                            <th class="pr-5"><i class="fa fa-sort" aria-hidden="true"></i> age</th>
+                            <th class="pr-5"><i class="fa fa-sort" aria-hidden="true"></i> height</th>
+                            <th class="pr-5 weightPad"><i class="fa fa-sort " aria-hidden="true"></i> weight</th>
+                            <th ><i class="fa fa-sort" aria-hidden="true"></i> date created</th>
+                            <th ><i class="fa fa-sort" aria-hidden="true"></i> last update</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>lawerance mullins</td>
+                            <td>male</td>
+                            <td>44</td>
+                            <td>181 cm</td>
+                            <td>82kg</td>
+                            <td>7:24 PM, 2 Mar 2019</td>
+                            <td>7:24 PM, 2 Mar 2019</td>
+                        </tr>
+                        <td>belinda boh</td>
+                        <td>female</td>
+                        <td>47</td>
+                        <td>172 cm</td>
+                        <td>62kg</td>
+                        <td>7:17 PM, 2 Mar 2019</td>
+                        <td>7:22 PM, 2 Mar 2019</td>
+                        </tr>
+                        <td>anthony ang</td>
+                        <td>male</td>
+                        <td>37</td>
+                        <td>165 cm</td>
+                        <td>89kg</td>
+                        <td>6:21 PM, 2 Mar 2019</td>
+                        <td>7:23 PM, 2 Mar 2019</td>
+                        </tr>
+                        <td>tan ah bee</td>
+                        <td>female</td>
+                        <td>42</td>
+                        <td>151 cm</td>
+                        <td>53kg</td>
+                        <td>3:58 PM, 2 Mar 2019</td>
+                        <td>7:24 PM, 2 Mar 2019</td>
+                        </tr>
+                        <td>bertie larson</td>
+                        <td>female</td>
+                        <td>32</td>
+                        <td>154 cm</td>
+                        <td>54kg</td>
+                        <td>11:24 PM, 2 Mar 2019</td>
+                        <td>6:21 PM, 2 Mar 2019</td>
+                        </tr>
+                        <td>jacob edwards</td>
+                        <td>male</td>
+                        <td>53</td>
+                        <td>182 cm</td>
+                        <td>79kg</td>
+                        <td>9:45 AM, 2 Mar 2019</td>
+                        <td>5:24 PM, 2 Mar 2019</td>
+                        </tr>
+                        <td>eric parsons</td>
+                        <td>male</td>
+                        <td>42</td>
+                        <td>175 cm</td>
+                        <td>82kg</td>
+                        <td>5:41 PM, 1 Mar 2019</td>
+                        <td>7:23 PM, 2 Mar 2019</td>
+                        </tr>
+                        <td>steve erickson</td>
+                        <td>male</td>
+                        <td>41</td>
+                        <td>181 cm</td>
+                        <td>77kg</td>
+                        <td>4:27 PM, 1 Mar 2019</td>
+                        <td>7:24 PM, 2 Mar 2019</td>
+                        </tr>
+                        <td>rena baker</td>
+                        <td>female</td>
+                        <td>39</td>
+                        <td>162 cm</td>
+                        <td>62kg</td>
+                        <td>12:29 PM, 1 Mar 2019</td>
+                        <td>7:12 AM, 2 Mar 2019</td>
+                        </tr>
+                        <td>lura cunningham</td>
+                        <td>female</td>
+                        <td>26</td>
+                        <td>147 cm</td>
+                        <td>44kg</td>
+                        <td>9:37 AM, 1 Mar 2019</td>
+                        <td>5:25 AM, 2 Mar 2019</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination pagination-sm justify-content-end">
+                        <li class="page-item disabled">
+                            <a class="page-link " href="#" tabindex="-1" aria-disabled="true"><i
+                                    class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- End Patient Info Section -->
+
+        </article>
+    <!-- End Page Content -->
+
+    <!-- starfooter -->
+    <footer class="text-center bg-dark  p-1 text-light ">
+        <section class="my-4  sm-text ">
+        <i class="fa fa-heart fa-5x" aria-hidden="true"></i>
+        <h4>connected<span class="font-weight-bold">life</span></h4>
+        <p class="text-white-50">Be connected. Live well. Enjoy Life.</p>
+        <a href="#"><i class="fa fa-facebook  fa-2x mx-2 text-white-50" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter  fa-2x mx-2 text-white-50" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-linkedin  fa-2x mx-2 text-white-50" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-youtube-play  fa-2x mx-2 text-white-50" aria-hidden="true"></i></a>
+        </section>
+        <p>Copyright 2019 ConnectedLife Pte. Ltd</p>
+    </footer>
+    <!-- end footer -->
+
+
+    <!-- start sticky notes -->
+    <section id="stickyIcons">
+
+        <section class="iconsCollection">
+            <span class="iconGrid">
+            <i class="fa  fa-th-large" aria-hidden="true"></i>
+            </span>
+            <span class="iconCode">
+                <i class="fa fa-code" aria-hidden="true"></i>
+            </span>
+            <span class="iconComment">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <div class="roseDot"></div>
+            </span>
+        </section>
+            <span class="iconinVision p-2 ">
+                <img src="img/logo-icon-v2.png" alt="" style="height: 15px;" class="ml-2">&nbsp; Made in InVision
+            </span>
+    </section>
+    <!-- end sticky notes -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!-- custome script -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
